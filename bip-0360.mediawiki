@@ -401,8 +401,8 @@ stack = [pubkey||signature]
 tapscript = [OP_PUSHDATA HASH256(expected_pubkey), OP_CHECKMLSIG]
 </source>
 
-1. OP_PUSHDATA HASH256(expected_pubkey) updates the stack to [HASH256(expected_pubkey), pubkey||signature]
-2. OP_CHECKMLSIG pops HASH256(expected_pubkey) and pubkey||signature, checks HASH256(expected_pubkey) == pubkey and verifies signature against pubkey.
+# OP_PUSHDATA HASH256(expected_pubkey) updates the stack to [HASH256(expected_pubkey), pubkey||signature]
+# OP_CHECKMLSIG pops HASH256(expected_pubkey) and pubkey||signature, checks HASH256(expected_pubkey) == pubkey and verifies signature against pubkey.
 
 ==== Future considerations ====
 
